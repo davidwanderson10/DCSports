@@ -1,0 +1,74 @@
+.banner{
+    background-image: url('https://br.puma.com/dw/image/v2/BKTG_PRD/on/demandware.static/-/Library-Sites-Shared/default/dw51c07cd1/MEX%202026/ENE/Large%20Full%20Bleed%20Hero_ESS_(Desktop%201920x845)Version3.png');
+    height: 80vh;
+    background-size: cover;
+    background-position: center;    
+    
+}
+
+.tituloBanner{
+    color: white;
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: left;
+    padding-top: 20vh;
+    margin-left: 2rem;
+
+}
+
+.subTituloBanner{
+    color: white;
+    font-size: 2rem;
+    text-align: left;
+    margin-left: 2rem;
+
+}
+
+.botaoBanner{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 32px;         
+    background-color: #ffffff;   
+    color: #000000;
+    border: none;               
+    margin-top: 2rem;
+    margin-left: 2rem;
+
+
+
+}
+
+.cards{
+    margin: 2rem;
+    height: 50vh;
+}
+
+.paraQuem{
+    margin: 2rem;
+    height: 50vh;
+}
+
+
+.textoLoja{
+    
+    height: 50vh;
+    color: #ffffff;
+    background-color: black;
+    padding-top: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: justify;
+    line-height: 26px;
+    
+    
+}
+
+.divLoja{
+   
+    height: 70vh;
+
+    
+    
+
+}
