@@ -2,40 +2,40 @@ import styles from './Styles/Masculino.module.css'
 
 const produtos = [
   {
-    titulo: "Tênis Fila Recovery Masculino",
+    titulo: "Tênis X-Cell Lightspeed",
     desconto: "-42% OFF",
     precoAntigo: 399.99,
     precoPix: 218.49,
     parcelas: "ou 3x de R$ 76,66",
     frete: "Frete grátis",
-    imagem: "https://images.unsplash.com/photo-1542291026-7eec264c27ff"
+    imagem: "https://images.puma.com/image/upload/f_auto,q_auto,w_600,b_rgb:FAFAFA/global/309972/03/sv01/fnd/BRA/fmt/png?sw=480&q=60"
   },
   {
-    titulo: "Bolsa Nike Gym Club",
+    titulo: "Mochila PUMA Gym Club",
     desconto: "-47% OFF",
     precoAntigo: 399.99,
     precoPix: 199.49,
     parcelas: "ou 3x de R$ 70,00",
     frete: "",
-    imagem: "https://images.unsplash.com/photo-1593032465171-bd6f27b1a6d8"
+    imagem: "https://images.puma.com/image/upload/f_auto,q_auto,w_600,b_rgb:FAFAFA/global/091180/08/fnd/BRA/fmt/png?sw=480&q=60"
   },
   {
-    titulo: "Camisa Juventus Adidas",
+    titulo: "Camisa Palmeiras HOME 2026 Torcedor Juvenil",
     desconto: "-30% OFF",
     precoAntigo: 399.99,
     precoPix: 265.99,
     parcelas: "ou 4x de R$ 70,00",
     frete: "Frete grátis",
-    imagem: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab"
+    imagem: "https://images.puma.com/image/upload/f_auto,q_auto,w_600,b_rgb:FAFAFA/global/787224/01/fnd/BRA/fmt/png"
   },
   {
-    titulo: "Kit Camiseta Hering",
+    titulo: "Moletom com Capuz Essentials No. 1 Logo Masculino",
     desconto: "-40% OFF",
     precoAntigo: 249.99,
     precoPix: 149.99,
     parcelas: "ou 2x de R$ 75,00",
     frete: "",
-    imagem: "https://images.unsplash.com/photo-1520975916090-3105956dac38"
+    imagem: "https://images.puma.com/image/upload/f_auto,q_auto,w_600,b_rgb:FAFAFA/global/682573/44/fnd/BRA/fmt/png?sw=480&q=60"
   }
 ]
 
