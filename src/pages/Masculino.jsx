@@ -1,61 +1,73 @@
 import styles from './Styles/Masculino.module.css'
 
-const Masculino = () => {
-  const produtos = [
-    {
-      titulo: "Tênis Adidas",
-      descricao: "Tênis para corrida",
-      categoria: "Corrida",
-      preco: 299.99,
-      imagem: "https://static.netshoes.com.br/produtos/tenis-adidas-galaxy-5-masculino/10/CF6354-010/CF6354-010_detalhe1.jpg"
-    },
-    {
-      titulo: "Camisa Puma",
-      descricao: "Camisa esportiva",
-      categoria: "Camisas",
-      preco: 149.99,
-      imagem: "https://static.netshoes.com.br/produtos/camisa-puma-teamliga-ii-jersey-masculina/10/758923-01/758923-01_detalhe1.jpg"
-    },
-    {
-      titulo: "Chuteira Nike",
-      descricao: "Chuteira para futebol",
-      categoria: "Futebol",
-      preco: 399.99,
-      imagem: "https://static.netshoes.com.br/produtos/chuteira-nike-vapor-15-club/10/FBF-0114-010/FBF-0114-010_detalhe1.jpg"
-    },
-    {
-      titulo: "Boné Adidas",
-      descricao: "Boné esportivo",
-      categoria: "Acessórios",
-      preco: 89.99,
-      imagem: "https://static.netshoes.com.br/produtos/bone-adidas-baseball/10/FJ2545-010/FJ2545-010_detalhe1.jpg"
-    }
-  ]
+const produtos = [
+  {
+    titulo: "Tênis Fila Recovery Masculino",
+    desconto: "-42% OFF",
+    precoAntigo: 399.99,
+    precoPix: 218.49,
+    parcelas: "ou 3x de R$ 76,66",
+    frete: "Frete grátis",
+    imagem: "https://images.unsplash.com/photo-1542291026-7eec264c27ff"
+  },
+  {
+    titulo: "Bolsa Nike Gym Club",
+    desconto: "-47% OFF",
+    precoAntigo: 399.99,
+    precoPix: 199.49,
+    parcelas: "ou 3x de R$ 70,00",
+    frete: "",
+    imagem: "https://images.unsplash.com/photo-1593032465171-bd6f27b1a6d8"
+  },
+  {
+    titulo: "Camisa Juventus Adidas",
+    desconto: "-30% OFF",
+    precoAntigo: 399.99,
+    precoPix: 265.99,
+    parcelas: "ou 4x de R$ 70,00",
+    frete: "Frete grátis",
+    imagem: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab"
+  },
+  {
+    titulo: "Kit Camiseta Hering",
+    desconto: "-40% OFF",
+    precoAntigo: 249.99,
+    precoPix: 149.99,
+    parcelas: "ou 2x de R$ 75,00",
+    frete: "",
+    imagem: "https://images.unsplash.com/photo-1520975916090-3105956dac38"
+  }
+]
 
+export default function Masculino() {
   return (
-    <div className={styles.container}>
-      <div className={styles.sidebar}>
-        <button>Corrida</button>
-        <button>Futebol</button>
-        <button>Camisas</button>
-        <button>Acessórios</button>
-      </div>
-
-      <div className={styles.cards}>
-        {produtos.map((produto, index) => (
-          <div key={index} className={styles.card}>
-            <img src={produto.imagem} alt={produto.titulo} />
-            <h3>{produto.titulo}</h3>
-            <p>{produto.descricao}</p>
-            <span>{produto.categoria}</span>
-            <strong>R$ {produto.preco.toFixed(2)}</strong>
+    <div className={styles.grid}>
+      {produtos.map((p, i) => (
+        <div key={i} className={styles.card}>
+          <div className={styles.imgBox}>
+            <span className={styles.badge}>{p.desconto}</span>
+            <img src={p.imagem} alt={p.titulo} />
           </div>
-        ))}
-      </div>
+
+          <div className={styles.info}>
+            <p className={styles.titulo}>{p.titulo}</p>
+
+            <span className={styles.precoAntigo}>
+              R$ {p.precoAntigo.toFixed(2)}
+            </span>
+
+            <strong className={styles.precoPix}>
+              R$ {p.precoPix.toFixed(2)} <span>no Pix</span>
+            </strong>
+
+            <span className={styles.parcelas}>{p.parcelas}</span>
+
+            {p.frete && <span className={styles.frete}>{p.frete}</span>}
+          </div>
+        </div>
+      ))}
     </div>
   )
 }
-
-export default Masculino
 
 
