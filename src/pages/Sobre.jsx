@@ -1,35 +1,32 @@
-import { Accordion, AccordionTab } from 'primereact/accordion';  
-import styles from './Styles/sobre.module.css';
+import { Accordion, AccordionTab } from 'primereact/accordion';   
 
 const Sobre = () => {
     return (
         <div className="w-6 mx-auto my-5">
             <Accordion activeIndex={0}>
-                <AccordionTab 
-                 header={<span className="sobre">Historia</span>} 
-                >
-                <p className={styles.sobre}>
-                             A FS11 Fundada em 2010 , a  FS11 Sports  é uma empresa inovadora no setor de vestuario, dedicada
-        a atender seus clientes com  soluções sustentáveis que atendam às necessidades do nosso planeta.
-        Com uma  equipe  apaixonada  por  fazer  a diferença , oferecemos produtos que reduzem o impacto 
-        ambiental sem comprometer a eficácia.
+                <AccordionTab header="Header I" >
+                    <p className="m-0 ">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </p>
                 </AccordionTab>
-                <AccordionTab
-                header={<span className="sobre">Missão</span>} 
-                >
-                <p className={styles.sobre}>
-        Nossa missão é liderar a mudança para um futuro mais verde através de inovações que promovam um
-        estilo de vida sustentável. Escolher a FS11 Sports significa apostar em um futuro onde a
-        tecnologia e o meio ambiente andam de mãos dadas. 
+                <AccordionTab header="Header II">
+                    <p className="m-0">
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                        quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
+                        sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                        Consectetur, adipisci velit, sed quia non numquam eius modi.
                     </p>
-               </AccordionTab>
-                <AccordionTab
-                  header={<span className="sobre">Depoimentos</span>}  
-                >
-                <p className={styles.sobre}>
-        É Uma empresa que cumpre prazos e atende muito bem seus clientes.
-                </p>
+                </AccordionTab>
+                <AccordionTab header="Header III">
+                    <p className="m-0">
+                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti
+                        quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt
+                        mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
+                        Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.
+                    </p>
                 </AccordionTab>
             </Accordion>
         </div>
