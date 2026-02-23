@@ -1,0 +1,21 @@
+.p-menubar {
+  background: #000 ;
+  border: none ;
+}
+
+.p-menubar * {
+  color: #fff ;
+}
+
+.p-menubar .p-menuitem-link {
+  background: transparent ;
+}
+
+.p-menubar .p-menuitem-link:hover {
+  background: rgba(255,255,255,0.15) ;
+}
+
+.p-menubar .p-menuitem.p-highlight > .p-menuitem-link {
+  background: #fff ;
+  color: #000 ;
+}

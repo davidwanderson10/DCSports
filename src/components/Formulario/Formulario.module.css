@@ -1,54 +1,195 @@
-h2 {
-    text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-bottom: 20px;
+.section {
+    background: #f6f6f6;
+    padding: 48px 16px;
 }
 
-.formularioContainer {
-    max-width: 600px;
-    margin: 40px auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-    box-shadow: 4px 4px 6px 2px rgba(0, 0, 0, 0.1)
+.container {
+    max-width: 1040px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 22px;
+    align-items: start;
+}
+
+@media (max-width: 900px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* HERO preto */
+.aside {
+    background: #000;
+    color: #fff;
+    border-radius: 18px;
+    padding: 28px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.kicker {
+    margin: 0 0 10px;
+    font-size: 12px;
+    letter-spacing: 0.18em;
+    font-weight: 900;
+    opacity: 0.85;
+}
+
+.title {
+    margin: 0;
+    font-size: 34px;
+    font-weight: 900;
+    letter-spacing: -0.02em;
+}
+
+.subtitle {
+    margin: 12px 0 18px;
+    color: rgba(255, 255, 255, 0.78);
+    line-height: 1.5;
+}
+
+.infoGrid {
+    display: grid;
+    gap: 12px;
+    margin-top: 18px;
+}
+
+.infoCard {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding: 14px 14px;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.infoIcon {
+    font-size: 18px;
+    opacity: 0.95;
+}
+
+.infoLabel {
+    margin: 0;
+    font-size: 12px;
+    opacity: 0.8;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.infoValue {
+    margin: 3px 0 0;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+/* Card do form */
+.card {
+    background: #fff;
+    border-radius: 18px;
+    padding: 22px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.cardTitle {
+    margin: 0 0 14px;
+    font-size: 12px;
+    letter-spacing: 0.18em;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #000;
 }
 
 .form {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 14px;
 }
 
 .field {
     display: flex;
     flex-direction: column;
+    gap: 8px;
 }
 
-.field label {
-    margin-bottom: 8px;
-    font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.label {
+    font-weight: 900;
+    font-size: 12px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #000;
 }
 
-.field input, .field textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    font-size: 16px;
+.inputWrap :global(.p-inputtext),
+.textareaWrap :global(.p-inputtextarea) {
+    width: 100%;
+    border-radius: 14px;
+    padding: 12px 12px;
+    font-size: 14px;
+    border: 1px solid rgba(0, 0, 0, 0.22);
+    box-shadow: none;
 }
 
-.form button {
-    align-self: center;
-    padding: 10px 20px;
-    width: 140px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 16px;
+/* remove roxo/azul do focus do Prime */
+.inputWrap :global(.p-inputtext:focus),
+.textareaWrap :global(.p-inputtextarea:focus) {
+    border-color: #000 !important;
+    box-shadow: none !important;
 }
 
+.hint {
+    margin: 0;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.55);
+}
 
+.actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 6px;
+}
 
+/* BOTÃO preto clean – mata o tema do Prime */
+.pumaButton :global(.p-button) {
+    background-color: #000 !important;
+    border: 1px solid #000 !important;
+    color: #fff !important;
+
+    border-radius: 999px;
+    padding: 14px 22px;
+
+    font-weight: 900;
+    font-size: 13px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.pumaButton :global(.p-button:hover) {
+    background-color: #111 !important;
+    border-color: #111 !important;
+}
+
+.pumaButton :global(.p-button:active) {
+    background-color: #000 !important;
+    transform: scale(0.98);
+}
+
+.pumaButton :global(.p-button:focus),
+.pumaButton :global(.p-button:focus-visible) {
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.lock {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.6);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
