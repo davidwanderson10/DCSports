@@ -17,7 +17,7 @@ function Footer() {
                     <a href="#" aria-label="YouTube"><i className="pi pi-youtube"></i></a>
                 </div>
             </div>
-            <h3 className={styles.footerCopy}>©FS11 Sports, 2026. Todos os direitos reservados</h3>
+            <h3 className={styles.footerCopy}>©Puma Sports, 2026. Todos os direitos reservados</h3>
         </footer>
     );
 }
