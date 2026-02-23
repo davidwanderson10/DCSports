@@ -1,0 +1,350 @@
+.banner {
+    background-image: url('https://br.puma.com/dw/image/v2/BKTG_PRD/on/demandware.static/-/Library-Sites-Shared/default/dw51c07cd1/MEX%202026/ENE/Large%20Full%20Bleed%20Hero_ESS_(Desktop%201920x845)Version3.png');
+    height: 80vh;
+    background-size: cover;
+    background-position: center;    
+}
+
+.tituloBanner {
+    color: white;
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: left;
+    padding-top: 20vh;
+    margin-left: 2rem;
+}
+
+.subTituloBanner {
+    color: white;
+    font-size: 2rem;
+    text-align: left;
+    margin-left: 2rem;
+}
+
+.botaoBanner {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 32px;         
+    background-color: #ffffff;   
+    color: #000000;
+    border: none;               
+    margin-top: 2rem;
+    margin-left: 2rem;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.botaoBanner:hover {
+    background-color: #f0f0f0;
+}
+
+.secaoCards {
+    margin: 4rem 2rem;
+}
+
+.secaoCards h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: #111;
+}
+
+.linhasProdutos {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 2rem;
+}
+
+.cardProduto {
+    position: relative;
+    width: 260px;
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 16px;
+    box-sizing: border-box;
+    text-align: left;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.cardProduto:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    transform: translateY(-6px);
+}
+
+.etiqueta {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: #b30000;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 8px;
+    border-radius: 3px;
+}
+
+.imagemProduto {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 12px;
+}
+
+.variantesProduto {
+    font-size: 11px;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin: 0 0 8px 0;
+}
+
+.tituloProduto {
+    font-size: 14px;
+    font-weight: 600;
+    color: #111;
+    margin: 0 0 12px 0;
+    line-height: 1.3;
+}
+
+.precoProduto {
+    font-size: 16px;
+    font-weight: 700;
+    color: #d00000;
+    margin: 0;
+}
+
+.precoAntigo {
+    font-size: 14px;
+    color: #999;
+    text-decoration: line-through;
+    margin-left: 8px;
+}
+
+.secaoParaQuem {
+    margin: 4rem 2rem;
+}
+
+.secaoParaQuem h2 {
+    text-align: left;
+    font-size: 2.0rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    padding-left: 40px;
+    color: #111;
+}
+
+.linhasPessoas {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.cardPessoa {
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.cardPessoa:hover {
+    transform: scale(1.08);
+}
+
+.imagemPessoa {
+    width: 180px;
+    height: 180px;
+    overflow: hidden;
+    margin: 0 auto 12px;
+    border: 4px solid #ffffff;
+    
+}
+
+.imagemPessoa img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.rotuloPessoa {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333333;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin: 0;
+}
+
+.secaoSobreLoja {
+    min-height: 100vh;
+    color: #ffffff;
+    background-color: #000000;
+    padding: 120px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteudoLoja {
+    max-width: 900px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+}
+
+.textoSobre {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.textoSobre h2 {
+    font-size: 1.8rem;
+    font-weight: 900;
+    line-height: 1.1;
+    margin: 0;
+    text-align: center;
+    letter-spacing: -1px;
+}
+
+.paragrafosLoja {
+    font-size: 1.15rem;
+    line-height: 1.85;
+}
+
+.paragrafosLoja p {
+    margin: 0 0 28px 0;
+    text-align: justify;
+}
+
+.paragrafosLoja p:last-child {
+    margin-bottom: 0;
+}
+
+.logoAdidas {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoAdidas img {
+    width: 140px;
+    height: auto;
+    filter: brightness(0) invert(1);
+}
+
+@media (max-width: 1400px) {
+    .linhasProdutos {
+        flex-wrap: wrap;
+    }
+    .cardProduto {
+        width: calc(25% - 18px);
+    }
+}
+
+@media (max-width: 1200px) {
+    .cardProduto {
+        width: calc(50% - 12px);
+    }
+}
+
+@media (max-width: 768px) {
+    .linhasProdutos {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cardProduto {
+        width: 300px;
+        max-width: 100%;
+    }
+    
+    .linhasPessoas {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    .imagemPessoa {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .secaoParaQuem,
+    .secaoCards {
+        margin: 2rem 1rem;
+    }
+    
+    .secaoSobreLoja {
+        padding: 80px 24px;
+        min-height: 90vh;
+    }
+    
+    .textoSobre h2 {
+        font-size: 1.8rem;
+        text-align: left;
+    }
+    
+    .paragrafosLoja {
+        font-size: 1.05rem;
+    }
+    
+    .logoAdidas img {
+        width: 110px;
+    }
+    
+    .banner .tituloBanner {
+        font-size: 3rem;
+        padding-top: 18vh;
+        margin-left: 1.5rem;
+    }
+    
+    .banner .subTituloBanner {
+        font-size: 1.6rem;
+        margin-left: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .secaoSobreLoja {
+        padding: 60px 20px;
+    }
+    
+    .textoSobre h2 {
+        font-size: 1.9rem;
+        letter-spacing: -0.5px;
+    }
+    
+    .banner .tituloBanner {
+        font-size: 2.5rem;
+        padding-top: 15vh;
+    }
+    
+    .banner .subTituloBanner {
+        font-size: 1.4rem;
+    }
+    
+    .secaoCards h2,
+    .secaoParaQuem h2 {
+        font-size: 2rem;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
